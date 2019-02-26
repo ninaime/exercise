@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemalocation="http://www.springframework.org/schema/beans
+   						http://www.springframework.org/schema/beans/spring-beans.xsd
+   						   
+">
+	<!-- 实例化对象,无参构造函数 -->
+	<bean id = "sysUserMapper" class="com.mime.exercise.mapper.SysUserMapper">
+	</bean>
+	<!-- 有参构造函数 -->
+	<bean id="sysUserService" class="com.mime.exercise.mapper.SysUserService">
+		<constructor-arg name="sysUserMapper"></constructor-arg>
+	</bean>
+
+</beans>
+
+
+
+
+
+
+
